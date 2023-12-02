@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  java-web-app:
+    build: .
+    ports: 
+      - 8083:8083
+  my_db:
+    image: mysql:5.7
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: 'test@123'
