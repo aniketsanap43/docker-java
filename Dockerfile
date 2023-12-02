@@ -1,4 +1,4 @@
-FROM FROM maven:3.8.3-openjdk-8
+FROM maven:3.8.3-openjdk-8 AS builder
 # Build the application with Maven
 EXPOSE 8083
 RUN mvn clean install
